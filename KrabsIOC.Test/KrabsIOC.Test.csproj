@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DailyPresenter.cs" />
-    <Compile Include="IDate.cs" />
+    <Compile Include="Interfaces\IClock.cs" />
+    <Compile Include="Interfaces\IDate.cs" />
     <Compile Include="MainTest.cs" />
-    <Compile Include="MyDate.cs" />
+    <Compile Include="Implementations\MyClock.cs" />
+    <Compile Include="Implementations\MyDate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

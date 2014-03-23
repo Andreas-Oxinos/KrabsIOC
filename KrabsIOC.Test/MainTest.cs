@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 namespace KrabsIOC.Test
 {
+
     [TestFixture]
     public class MainTest
     {
@@ -13,6 +14,7 @@ namespace KrabsIOC.Test
         {
             Injector injector = new Injector();
             injector.Bind<IDate, MyDate>();
+            injector.Bind<IClock, MyClock>();
             var letssee = injector.Resolve<DailyPresenter>();
             letssee.Start();
         }
